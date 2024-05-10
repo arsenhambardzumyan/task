@@ -1,0 +1,248 @@
+.form{
+    position: relative;
+}
+.form .condition-checkbox{
+    position: absolute;
+    transform: translate(0%, 400%);
+}
+.form .submit{
+    position: absolute;
+    transform: translate(0%, 850%);
+}
+.selected-card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.selected-card label{
+    text-align: start;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 8px 0;
+    color: #FFFFFF;
+}
+.selected-card span{
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 10px;
+    color: #FFFFFF;
+}
+
+.selected-card .front-card input{
+    float: left;
+    width: 94%;
+    top: 24px;
+    gap: 0px;
+    border-radius: 8px;
+    border: 1px solid #F2F2F5;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px 0px #55577029,0px 2px 4px 0px #28293D0A;
+
+}
+
+.selected-card .front-card .expirationDate{
+    float: left;
+    width: 15%;
+    gap: 0px;
+    border-radius: 8px;
+    border: 1px solid #E4E4EB;
+    background: #FAFAFC;
+}
+
+.selected-card .back-card input{
+    width: 30%;
+    float: right;
+}
+.front-card-info{
+    background-image: url('../images/Mask Group.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 65px 20px 25px 20px;
+}
+.form-expirationDate{
+    display: flex;
+}
+.front-card,
+.back-card {
+    position: absolute;
+    width: 46%;
+    box-sizing: border-box;
+}
+
+.bank-card-form .front-card .form-group {
+    margin-bottom: 15px;
+}
+
+.bank-card-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.bank-card-form .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.bank-card-form .error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.bank-card-form button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 14px 32px 14px 32px;
+    gap: 0px;
+    border-radius: 100px ;
+}
+
+.front-card{
+    padding: 20px ;
+    gap: 10px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #A6C8FF 0%, #0043CE 100%);
+    box-shadow: 0px 8px 16px 0px rgba(85, 87, 112, 0.29), 0px 2px 4px 0px rgba(40, 41, 61, 0.1);
+    z-index: 2;
+}
+
+.selected-card .back-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    background-image: url('../images/Group 3329.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(40%, 1.2%);
+    z-index: 1;
+}
+
+.form-back-card{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    text-align: start;
+    margin-bottom: 0;
+    padding: 19% 0 0 68%;
+}
+
+.form-back-card label{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #555770;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.form-back-card input{
+    border-radius: 8px;
+    padding: 0;
+    background: #FAFAFC;
+    border: 1px solid #E4E4EB;
+}
+.form-back-card p{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    max-width: 80%;
+    margin-bottom: 0;
+    color: #8F90A6;
+}
+
+.front-card {
+    padding: 0;
+}
+
+.condition-checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start
+}
+
+.condition-checkbox .second-row{
+    padding-left: 10px;
+}
+.condition-checkbox .second-row span{
+    padding-right: 10px;
+}
+.condition-checkbox .second-row p, span{
+    color: #555770;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
+}
+.condition-checkbox .second-row a{
+    text-decoration: none;
+}
+.condition-checkbox .top-row {
+    display: flex;
+}
+.second-row-label{
+    display: flex;
+    flex-direction: column;
+}
+.second-row .top-row, .bottom-row{
+    text-align: start;
+}
+
+
+@media (max-width: 768px) {
+    .selected-card {
+        flex-direction: column;
+    }
+
+    .selected-card .front-card,
+    .selected-card .back-card {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .condition-checkbox {
+        top: -6rem;
+        align-items: flex-start;
+    }
+
+    .second-row .top-row,
+    .bottom-row {
+        text-align: center;
+        max-width: 330px;
+    }
+
+    .second-row-label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .second-row .top-row span {
+        padding-right: 0;
+    }
+
+}
